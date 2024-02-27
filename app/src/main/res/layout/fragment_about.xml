@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutFragment" >
+
+        <TextView
+            android:id="@+id/header_about"
+            style="@style/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/about_author"
+            style="@style/plainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutAuthor"
+            app:layout_constraintEnd_toEndOf="@+id/header_about"
+            app:layout_constraintStart_toStartOf="@+id/header_about"
+            app:layout_constraintTop_toBottomOf="@+id/header_about" />
+
+        <TextView
+            android:id="@+id/about_year"
+            style="@style/plainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutYear"
+            app:layout_constraintEnd_toEndOf="@+id/about_author"
+            app:layout_constraintStart_toStartOf="@+id/about_author"
+            app:layout_constraintTop_toBottomOf="@+id/about_author" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

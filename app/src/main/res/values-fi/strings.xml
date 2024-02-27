@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">matikkapeli_laaja</string>
+    <string name="rules">Säännöt</string>
+    <string name="about">Tietoa</string>
+    <string name="start_header">Matematiikkapeli</string>
+    <string name="start_choose_game">Millaisia harjoituksia haluat tehdä?</string>
+    <string name="addition">Yhteenlasku</string>
+    <string name="deduction">Vähennyslasku</string>
+    <string name="play_again">Pelaa uudelleen</string>
+    <string name="summary_text">Sait %1$d pistettä ajassa %2$s.</string>
+    <string name="gameRounds">Kierros %1$d/%2$d</string>
+    <string name="gamePoints">Pisteet %1$d</string>
+    <string name="gameTime">Aika %1$s</string>
+    <string name="gameQuestion">%1$d %2$s %3$d =</string>
+    <string name="buttonAnswer">Vastaa</string>
+    <string name="aboutAuthor">Tekijä: Iina Soikkeli</string>
+    <string name="aboutYear">2024</string>
+    <string name="rulesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus velit, gravida sed lacinia a, fringilla condimentum tellus. Suspendisse vel viverra lectus. Mauris quis est id dolor pellentesque accumsan ac ac odio. Curabitur luctus sit amet dolor eget efficitur. Ut elementum sagittis nisi, in ornare erat. In efficitur neque hendrerit efficitur cursus. Etiam sed efficitur tortor. Vestibulum maximus augue id metus convallis congue. Praesent vel faucibus massa, ac semper turpis.</string>
+    <string name="summaryHeader">Peli ohi</string>
+</resources>

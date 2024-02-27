@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GameFragment">
+
+        <TextView
+            android:id="@+id/game_points"
+            style="@style/plainText2"
+            android:text="@string/gamePoints"
+            app:layout_constraintStart_toStartOf="@+id/game_rounds"
+            app:layout_constraintTop_toBottomOf="@+id/game_rounds" />
+
+        <TextView
+            android:id="@+id/game_time"
+            style="@style/plainText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gameTime"
+            app:layout_constraintStart_toStartOf="@+id/game_points"
+            app:layout_constraintTop_toBottomOf="@+id/game_points" />
+
+        <TextView
+            android:id="@+id/game_question"
+            style="@style/plainText2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="end"
+            android:text="@string/gameQuestion"
+            app:layout_constraintStart_toStartOf="@+id/game_time"
+            app:layout_constraintTop_toBottomOf="@+id/game_time" />
+
+        <EditText
+            android:id="@+id/game_answer"
+            style="@style/plainText2"
+            android:layout_width="50dp"
+            android:ems="10"
+            android:inputType="number|numberSigned"
+            app:layout_constraintStart_toEndOf="@+id/game_question"
+            app:layout_constraintTop_toTopOf="@+id/game_question" />
+
+        <Button
+            android:id="@+id/button_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/buttonAnswer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_question" />
+
+        <TextView
+            android:id="@+id/game_rounds"
+            style="@style/plainText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/gameRounds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
