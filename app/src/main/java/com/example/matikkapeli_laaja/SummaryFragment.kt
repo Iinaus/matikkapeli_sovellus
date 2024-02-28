@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.matikkapeli_laaja.databinding.FragmentSummaryBinding
 
@@ -17,6 +18,7 @@ class SummaryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentSummaryBinding.inflate(inflater, container, false)
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = null
 
         val points: Int = arguments?.getInt("points")?: 0
         val seconds: Int = arguments?.getInt("seconds")?: 0

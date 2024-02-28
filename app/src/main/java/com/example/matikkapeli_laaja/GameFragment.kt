@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.matikkapeli_laaja.databinding.FragmentGameBinding
 
@@ -36,6 +37,7 @@ class GameFragment : Fragment() {
 
         //halutessaan alla olevalla uloskommentoidulla komennolla voisi piilottaa koko toolbarin
         //(requireActivity() as AppCompatActivity).supportActionBar?.hide()
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = getString(R.string.start_header)
 
         if(savedInstanceState != null) {
             round = savedInstanceState.getInt("round")

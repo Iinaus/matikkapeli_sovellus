@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.matikkapeli_laaja.StartFragment"
-        android:label=""
+        android:label="@string/blank"
         tools:layout="@layout/fragment_start" >
         <action
             android:id="@+id/action_startFragment_to_gameFragment"
@@ -30,7 +30,7 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.matikkapeli_laaja.SummaryFragment"
-        android:label=""
+        android:label="@string/blank"
         tools:layout="@layout/fragment_summary" >
         <action
             android:id="@+id/action_summaryFragment_to_startFragment"
