@@ -17,11 +17,12 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.matikkapeli_laaja.GameFragment"
-        android:label="fragment_game"
+        android:label="@string/start_header"
         tools:layout="@layout/fragment_game" >
         <action
             android:id="@+id/action_gameFragment_to_summaryFragment"
-            app:destination="@id/summaryFragment" />
+            app:destination="@id/summaryFragment"
+            app:popUpTo="@id/startFragment" />
         <argument
             android:name="gameType"
             app:argType="integer" />
@@ -29,7 +30,7 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.matikkapeli_laaja.SummaryFragment"
-        android:label="fragment_summary"
+        android:label=""
         tools:layout="@layout/fragment_summary" >
         <action
             android:id="@+id/action_summaryFragment_to_startFragment"

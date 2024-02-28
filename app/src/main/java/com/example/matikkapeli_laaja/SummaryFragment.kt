@@ -20,12 +20,10 @@ class SummaryFragment : Fragment() {
 
         val points: Int = arguments?.getInt("points")?: 0
         val seconds: Int = arguments?.getInt("seconds")?: 0
-        println(seconds)
 
         val minutes: Int = seconds / 60
         val remainingSeconds: Int = seconds % 60
         val timeSTR: String = String.format("%2d:%02d", minutes, remainingSeconds)
-        println(timeSTR)
 
         binding.summaryText.text = resources.getString(R.string.summary_text, points, timeSTR)
 

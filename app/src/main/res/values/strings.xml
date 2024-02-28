@@ -12,6 +12,7 @@
     <string name="gamePoints">Points %1$d</string>
     <string name="gameTime">Time %1$s</string>
     <string name="gameQuestion">%1$d %2$s %3$d =</string>
+    <string name="gameToast">Type answer</string>
     <string name="buttonAnswer">Answer</string>
     <string name="aboutAuthor">Author: Iina Soikkeli</string>
     <string name="aboutYear">2024</string>

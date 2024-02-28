@@ -3,10 +3,10 @@ package com.example.matikkapeli_laaja
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.matikkapeli_laaja.databinding.FragmentGameBinding
 
@@ -34,7 +34,8 @@ class GameFragment : Fragment() {
         binding = FragmentGameBinding.inflate(inflater, container, false)
         gameType = arguments?.getInt("gameType")?: 0
 
-        (requireActivity() as AppCompatActivity).supportActionBar?.hide()
+        //halutessaan alla olevalla uloskommentoidulla komennolla voisi piilottaa koko toolbarin
+        //(requireActivity() as AppCompatActivity).supportActionBar?.hide()
 
         if(savedInstanceState != null) {
             round = savedInstanceState.getInt("round")
@@ -65,12 +66,23 @@ class GameFragment : Fragment() {
                     gameOver()
                 }
             } else {
-                Toast.makeText(requireContext(), "Type answer", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.gameToast), Toast.LENGTH_SHORT).show()
             }
         }
 
         return binding.root
     }
+
+    // piilotetaan options menu 1/2
+    override fun onPrepareOptionsMenu(menu: Menu) {
+        menu.clear()
+    }
+    // piilotetaan options menu 2/2
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
+
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
