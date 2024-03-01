@@ -19,8 +19,6 @@
         <TextView
             android:id="@+id/game_time"
             style="@style/plainText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/gameTime"
             app:layout_constraintStart_toStartOf="@+id/game_points"
             app:layout_constraintTop_toBottomOf="@+id/game_points" />
@@ -28,9 +26,8 @@
         <TextView
             android:id="@+id/game_question"
             style="@style/plainText2"
-            android:layout_width="wrap_content"
             android:layout_marginTop="50dp"
-            android:gravity="end"
+            android:gravity="center_vertical|end"
             android:text="@string/gameQuestion"
             app:layout_constraintStart_toStartOf="@+id/game_time"
             app:layout_constraintTop_toBottomOf="@+id/game_time" />
@@ -57,8 +54,6 @@
         <TextView
             android:id="@+id/game_rounds"
             style="@style/plainText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="100dp"
             android:text="@string/gameRounds"
